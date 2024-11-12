@@ -1,0 +1,24 @@
+{
+  "name": "rust-change-detection",
+  "version": "0.1.2",
+  "main": "index.js",
+  "repository": "https://github.com/praveenn77/rust-change-detection.git",
+  "author": "Praveen N <npu@live.in>",
+  "description": "A files change detection tool written in Rust",
+  "keywords": [
+    "rust",
+    "change",
+    "detection",
+    "files"
+  ],
+  "license": "MIT",
+  "bin":  {
+    "rcd": "./bin/rcd"
+  },
+  "files": [
+    "bin"
+  ],
+  "scripts": {
+    "prepublishOnly": "cargo build --release && cp target/release/rcd bin/rcd"
+  }
+}
